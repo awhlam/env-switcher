@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Environment Switcher</title>
+  <style>
+    body {
+      width: 200px;
+      padding: 10px;
+      font-family: Arial, sans-serif;
+    }
+    select {
+      width: 100%;
+      padding: 8px;
+      margin: 5px 0;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+    }
+    button {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <h3>Switch Environment</h3>
+  <select id="environmentSelect">
+    <option value="prod1">Production-1</option>
+    <option value="prod">Production-0</option>
+    <option value="staging">Staging</option>
+    <option value="dev">Development</option>
+  </select>
+  <button id="switchButton">Switch</button>
+  <script src="popup.js"></script>
+</body>
+</html>
